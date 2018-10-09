@@ -1,0 +1,126 @@
+
+html {
+	margin: 0;
+	padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+	
+	margin: 0;
+	padding: 0;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+ }
+
+
+#gamecontainer{
+  background-image: url('../images/gamebg.jpg');
+/*  background-color: grey;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: auto;
+    width: 60%;
+    padding: 2%;
+}
+
+
+#wordcontainer{
+  height: 90%;
+}
+
+
+#input{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#exit{
+  padding-top: 20px;
+  font-size: 1em; 
+  cursor: pointer;
+  text-align: center;
+  transition: all .1s ease;
+}
+
+#exit > a {
+  color:white;
+  transition: all .1s ease;
+}
+
+#exit > a:hover{
+  font-size: 1.1em;
+  color: lightblue;
+  text-align: center;
+  transition: all .1s ease; 
+}
+
+
+
+
+/* apply css */
+
+.game{
+  background: rgba(0, 0, 0, 0.5);
+  width:100%;
+  height:100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.life-title{
+  font-size: 50px;
+  z-index: 20;
+  font-family: arial;
+  color: rgba(255, 255, 255, 0.5);
+  user-select:none;
+  width:100%;
+  text-align:center;
+}
+
+.life{
+  font-size: 20px;
+  z-index: 20;
+  font-family: arial;
+  color: rgba(255, 255, 255, 0.5);
+  user-select:none;
+  width:100%;
+  text-align:center;
+}
+
+.word{
+  
+  width: 100px;
+  height:100px;
+  font-size: 2em;
+  position:absolute;
+  top: -150px;
+  transition: transform 1.5s linear;
+  z-index:100;
+  color: white;
+  text-align:center;
+}
+
+.move{
+   transform:translateY(100vh);
+}
+
+
+
+.counter{
+  width:100%;
+  margin: 0 auto;
+  text-align:center;
+  font-family:arial;
+  color:red;
+  font-weight:bold;
+  padding-top:10px;
+  font-size:20px;
+  position:relative;
+  z-index:9999;
+}

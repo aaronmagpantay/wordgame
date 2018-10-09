@@ -1,0 +1,64 @@
+
+html {
+	margin: 0;
+	padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+	
+	margin: 0;
+	padding: 0;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  font-family: 'Abril Fatface', cursive;
+ }
+
+
+#container{
+  background-image: url('../images/welcome.jpg');
+/*  background-color: grey;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0 auto;
+    width: 726px;
+}
+
+
+
+
+#select{
+  width: 50%;
+  margin: auto;
+  padding-top: 40%;
+}
+
+a:hover{
+  text-decoration: none
+}
+
+#actionselect{
+  list-style-type: none;
+  text-shadow: 2px 2px grey;
+}
+
+#newgame{
+  font-size: 1.5em; 
+  cursor: pointer;
+  text-align: center;
+  transition: all .1s ease;
+}
+#newgame > a {
+  color:white;
+  transition: all .1s ease;
+}
+
+#newgame > a:hover{
+  font-size: 1.6em;
+  color: red;
+  text-align: center;
+  transition: all .1s ease; 
+}
