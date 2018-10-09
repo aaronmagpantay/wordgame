@@ -2,7 +2,7 @@
 
 
 
-let life = 5;
+let life = 10;
 let score = 0;
 let velMin = 20000; //in milliseconds
 let velMax = 30000; //in milliseconds
