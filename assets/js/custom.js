@@ -115,12 +115,32 @@ $('#input').on('keypress', function (e) {
          }
    });
 
+let times = 2;
+if(velMin < 18000){
+  times = 3;
+}
 
 let runGame = setInterval(function(){
-                for (i = 0; i < 2; i++) { 
+                for (i = 0; i < times; i++) { 
+                  let times = 2;
+                  if(velMin < 18000){
+                    times = 3;
+                  }
+                  if(velMin < 15000){
+                    times = 4;
+                  }
+                  if(velMin < 13000){
+                    times = 5;
+                  }
+                  if(velMin < 10000){
+                    times = 6;
+                  }
+                  if(velMin < 7000){
+                    times = 7;
+                  }
                   dropWords(velMin,velMax);
                 }  
-          }, 10000);
+          }, 5000);
 
 
 
