@@ -121,7 +121,7 @@ let times = 2;
 let runGame = setInterval(function(){
                 for (i = 0; i < times; i++) { 
                   let times = 2;
-                  if(velMin < 19000){
+                  if(velMin < 18000){
                     times = 3;
                   }
                   if(velMin < 15000){
