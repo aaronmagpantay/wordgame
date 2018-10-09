@@ -79,20 +79,6 @@ for (i = 0; i < 2; i++) {
 }
 
 
-// $(document).on('click', '.word', function(){
-
-  
-//   //use this if for checking entered word if correct
-//   if($(this).data("test")){
-//     score += 1;
-//   } else {
-//     score -= 1;
-//   }
-  
-
-//   $(".score").html(score);
-//   $(this).remove();
-// });
 
 $('#input').on('keypress', function (e) {
 
@@ -137,22 +123,4 @@ let runGame = setInterval(function(){
           }, 10000);
 
 
-//function for timer
-// function countdown() {
-//     	let seconds = 60;
-// 	    function tick() {
-// 	        let counter = document.getElementById("counter");
-// 	        seconds--;
-// 	        counter.innerHTML = (seconds < 10 ? "0" : "")  + String(seconds) + "S";
-// 	        if( seconds > 0 ) {
-// 	            setTimeout(tick, 1000);
-// 	        } else {
-// 	        	let totalScore = $('.life').text();
-// 	            alert("Game over with " + totalScore + " pts.");
-// 	            clearInterval(runGame);
-// 	        }
-// 	    }
-//     	tick();
-// 	}
 
-// countdown();
