@@ -13,7 +13,7 @@ let id = "thisid";
 $('.life').text(life);
 
 //word dictionary
-let wordDictionary = ["apple", "banana", "mango","monitor", "program", "application", "keyboard", "javascript", "gaming", "network"];
+let wordDictionary = ["apple", "ralph", "anna", "aaron", "abi", "banana", "mango","monitor", "program", "application", "keyboard", "javascript", "gaming", "network"];
 
 
 const getRandomInt = (min, max) =>{
@@ -116,14 +116,12 @@ $('#input').on('keypress', function (e) {
    });
 
 let times = 2;
-if(velMin < 18000){
-  times = 3;
-}
+
 
 let runGame = setInterval(function(){
                 for (i = 0; i < times; i++) { 
                   let times = 2;
-                  if(velMin < 18000){
+                  if(velMin < 19000){
                     times = 3;
                   }
                   if(velMin < 15000){
