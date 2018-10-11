@@ -13,7 +13,7 @@ let id = "thisid";
 $('.life').text(life);
 
 //word dictionary
-let wordDictionary = ["apple", "ralph", "anna", "aaron", "abi", "banana", "mango","monitor", "program", "application", "keyboard", "javascript", "gaming", "network"];
+let wordDictionary = ["apple", "ralph", "anna", "aaron", "abi", "banana", "mango","monitor", "program", "application", "keyboard", "javascript", "gaming", "network","clinic","movement","lamb","lace","forecast","freshman","physics","dinner","firefighter","chase","ban","contain","wording","executive","cooperation","ash","mutation","comfortable","overall","visible","grain"];
 
 
 const getRandomInt = (min, max) =>{
@@ -87,6 +87,7 @@ $('#input').on('keypress', function (e) {
 
           score += getRandomInt(0,casted.length) * 10;
             if($('#'+casted).attr("id") == casted){
+               $('#'+casted).removeClass("move");
             	 $('#'+casted).remove();
             	 $('#input').val('');
                 velMin -= 500; //in milliseconds
@@ -94,10 +95,10 @@ $('#input').on('keypress', function (e) {
 
                 //sets velocity not less than 0(fixed)
                 if(velMin < 500){
-                  velMin = 200;
+                  velMin = 800;
                 }
                 if(velMax < 500){
-                  velMax = 500;
+                  velMax = 1000;
                 }
 
                 // console.log(velMin);
